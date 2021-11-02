@@ -1,11 +1,21 @@
 "Use strict";
 
-const btn = document.querySelector('.btn'),
-    block = document.querySelector('.block'),
-    title = document.querySelector('.titlegit');
+const numberOfFilms = +prompt('Сколько фильмов вы посмотрели?', '');
 
-let question = prompt('What your Name?', "");
-btn.addEventListener('click', () => {
-    title.textContent = `Hello ${question}`;
-    block.classList.toggle('active');
-});
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privet: false
+};
+
+let a = prompt('Enter a last watched movie', '');
+let b = prompt('How stars do you gotten', '');
+let c = prompt('Enter a last watched movie');
+let d = prompt('How stars do you gotten', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
