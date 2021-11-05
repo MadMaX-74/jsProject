@@ -10,12 +10,12 @@ const personalMovieDB = {
     privet: false
 };
 
-let a = prompt('Enter a last watched movie', '');
-let b = prompt('How stars do you gotten', '');
-let c = prompt('Enter a last watched movie');
-let d = prompt('How stars do you gotten', '');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+for(let i = 0; i < 2; i++) {
+    let a = prompt('Enter a last watched movie', '');
+    let b = prompt('How stars do you gotten', '');
+
+    personalMovieDB.movies[a] = b;
+}
 
 console.log(personalMovieDB);
